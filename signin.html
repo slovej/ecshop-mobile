@@ -22,11 +22,11 @@
 
     <script type="text/javascript">
         $(function () {
-            $("#formSignin").validation(function (obj, params) {
-                //扩展校验方法
-            }, {reqmark: false, icon: true});
             //.注册
             $("#btnSubmit").on('click', function (event) {
+                $("#formSignin").validation(function (obj, params) {
+                    //扩展校验方法
+                }, {reqmark: false, icon: true});
                 // 2.最后要调用 valid()方法。
                 if ($("#formSignin").valid('填写信息不完整。') == false) {
                     //alert('填写信息不完整。');
@@ -41,7 +41,7 @@
 
 <div class="container">
     <form class="form-signin" id="formSignin">
-        <h2 class="form-signin-heading">等你好久了！</h2>
+        <h2 class="form-signin-heading"><img src="images/logo.gif"></h2>
 
         <div class="form-group">
             <label class="sr-only" for="inputEmail"><img src="images/person.png"></label>
@@ -60,12 +60,10 @@
         <div id="myCarousel" class="carousel">
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="http://s.lietou-static.com/revs/p/beta2/images/tpls/user/ajaxlogin/salary-mid_4a2c6018.jpg"
-                         alt="First slide">
+                    <img src="images/signImg01.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="http://s.lietou-static.com/revs/p/beta2/images/tpls/user/ajaxlogin/position-mid_2d555445.jpg"
-                         alt="Second slide">
+                    <img src="images/signImg02.jpg" alt="First slide">
                 </div>
             </div>
         </div>
