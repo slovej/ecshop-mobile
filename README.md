@@ -1,3 +1,6 @@
 # ecshop-mobile
 ecshop移动端页面设计
-增加第一个版本
+
+2015-06-22 sam
+1、采用bootstrap框架
+2、完成前端：登录页面signin.html
